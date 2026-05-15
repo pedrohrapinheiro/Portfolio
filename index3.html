@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Pinheiro — Frontend Developer</title>
+    <link rel="stylesheet" href="assets/style/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Noise overlay -->
+    <div class="noise"></div>
+
+    <!-- Animated grid background -->
+    <div class="grid-bg"></div>
+
+    <header>
+        <div class="logo">PP<span class="cursor-blink">_</span></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active">about</a></li>
+                <li><a href="index3.html" class="nav-link">projects</a></li>
+                <li><a href="index2.html" class="nav-link">contact</a></li>
+                <li>
+                    <a href="https://www.instagram.com/pedropinheiro.dev/" target="_blank" class="nav-link social">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <div class="hero-left">
+
+                <!-- Tag decorativa -->
+                <div class="tag">
+                    <span class="tag-dot"></span>
+                    available for work
+                </div>
+
+                <h1 class="main-title">
+                    <span class="line-1">Hi<span class="wave">👋</span></span>
+                    <span class="line-2">I'm <em>Pedro</em></span>
+                    <span class="line-3">Pinheiro.</span>
+                </h1>
+
+                <div class="role-line">
+                    <span class="bracket">[</span>
+                    <span class="role-text" id="roleText"></span>
+                    <span class="cursor-blink">|</span>
+                    <span class="bracket">]</span>
+                </div>
+
+                <p class="bio">
+                    18 y/o CS student from <span class="highlight">Recife, Brazil</span>. 
+                    Building the web one component at a time. Fluent in 
+                    <span class="highlight">EN</span>, native <span class="highlight">PT</span>, 
+                    intermediate <span class="highlight">FR</span>, learning 
+                    <span class="highlight">普通话</span>. 
+                    Road to <span class="highlight">Tsinghua 2030</span>.
+                </p>
+
+                <div class="stack">
+                    <span class="stack-label">// stack</span>
+                    <div class="badges">
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">React</span>
+                        <span class="badge">Python</span>
+                    </div>
+                </div>
+
+                <div class="cta-row">
+                    <a href="index2.html" class="btn-primary">hire me →</a>
+                    <a href="#projects" class="btn-ghost">see projects</a>
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+                <div class="photo-frame">
+                    <div class="photo-border"></div>
+                    <img 
+                        draggable="false" 
+                        src="assets/images/BAILE-__17505___1_-removebg-preview 1.png" 
+                        alt="Pedro Pinheiro"
+                        class="profile-img"
+                    />
+                    <!-- Floating card -->
+                    <div class="float-card">
+                        <span class="float-icon">🇨🇳</span>
+                        <div>
+                            <div class="float-title">Learning Mandarin</div>
+                            <div class="float-sub">每天都在学习</div>
+                        </div>
+                    </div>
+                    <!-- Stats card -->
+                    <div class="stats-card">
+                        <div class="stat">
+                            <span class="stat-num">12</span>
+                            <span class="stat-label">certs</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">18</span>
+                            <span class="stat-label">years old</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
