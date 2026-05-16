@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Pinheiro — Frontend Developer</title>
+    <title>Pedro Pinheiro — Projects</title>
     <link rel="stylesheet" href="assets/style/style.css"/>
+    <link rel="stylesheet" href="assets/style/projects.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Noise overlay -->
+ 
     <div class="noise"></div>
-
-    <!-- Animated grid background -->
     <div class="grid-bg"></div>
-
+ 
     <header>
         <div class="logo">PP<span class="cursor-blink">_</span></div>
         <nav>
             <ul>
-                <li><a href="#" class="nav-link active">about</a></li>
-                <li><a href="index3.html" class="nav-link">projects</a></li>
+                <li><a href="index.html"  class="nav-link">about</a></li>
+                <li><a href="index3.html" class="nav-link active">projects</a></li>
                 <li><a href="index2.html" class="nav-link">contact</a></li>
                 <li>
                     <a href="https://www.instagram.com/pedropinheiro.dev/" target="_blank" class="nav-link social">
@@ -36,94 +34,128 @@
             </ul>
         </nav>
     </header>
-
+ 
     <main>
-        <section class="hero">
-
-            <div class="hero-left">
-
-                <!-- Tag decorativa -->
+        <section class="projects-section">
+ 
+            <!-- Header -->
+            <div class="projects-header">
                 <div class="tag">
                     <span class="tag-dot"></span>
-                    available for work
+                    selected work
                 </div>
-
                 <h1 class="main-title">
-                    <span class="line-1">Hi<span class="wave">👋</span></span>
-                    <span class="line-2">I'm <em>Pedro</em></span>
-                    <span class="line-3">Pinheiro.</span>
+                    <span class="line-1">My</span>
+                    <span class="line-2"><em>Projects.</em></span>
                 </h1>
-
-                <div class="role-line">
-                    <span class="bracket">[</span>
-                    <span class="role-text" id="roleText"></span>
-                    <span class="cursor-blink">|</span>
-                    <span class="bracket">]</span>
-                </div>
-
                 <p class="bio">
-                    18 y/o CS student from <span class="highlight">Recife, Brazil</span>. 
-                    Building the web one component at a time. Fluent in 
-                    <span class="highlight">EN</span>, native <span class="highlight">PT</span>, 
-                    intermediate <span class="highlight">FR</span>, learning 
-                    <span class="highlight">普通话</span>. 
-                    Road to <span class="highlight">Tsinghua 2030</span>.
+                    Built with real code and real hours.
+                    Each project taught me something new — here's what I've shipped so far.
                 </p>
-
-                <div class="stack">
-                    <span class="stack-label">// stack</span>
-                    <div class="badges">
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">JavaScript</span>
-                        <span class="badge">TypeScript</span>
-                        <span class="badge">React</span>
-                        <span class="badge">Python</span>
-                    </div>
-                </div>
-
-                <div class="cta-row">
-                    <a href="index2.html" class="btn-primary">hire me →</a>
-                    <a href="#projects" class="btn-ghost">see projects</a>
-                </div>
-
             </div>
-
-            <div class="hero-right">
-                <div class="photo-frame">
-                    <div class="photo-border"></div>
-                    <img 
-                        draggable="false" 
-                        src="assets/images/BAILE-__17505___1_-removebg-preview 1.png" 
-                        alt="Pedro Pinheiro"
-                        class="profile-img"
-                    />
-                    <!-- Floating card -->
-                    <div class="float-card">
-                        <span class="float-icon">🇨🇳</span>
-                        <div>
-                            <div class="float-title">Learning Mandarin</div>
-                            <div class="float-sub">每天都在学习</div>
+ 
+            <!-- Projects grid -->
+            <div class="projects-grid">
+ 
+                <!-- Project 1 — Chess -->
+                <article class="project-card" style="--delay: 0s">
+                    <div class="card-image">
+                        <img src="assets/images/chess-preview.png" alt="Chess Game JS" draggable="false"/>
+                        <div class="card-overlay">
+                            <a href="https://github.com/pedrohrapinheiro/Chess-game-js" target="_blank" class="overlay-btn">
+                                view on github →
+                            </a>
+                        </div>
+                        <div class="card-number">01</div>
+                    </div>
+ 
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2026</span>
+                            <span class="card-focus">// focus: JavaScript</span>
+                        </div>
+ 
+                        <h2 class="card-title">Chess Game JS</h2>
+ 
+                        <p class="card-desc">
+                            A fully playable chess game built from scratch in vanilla JavaScript.
+                            Implements all piece movements, no check detection, checkmate logic,
+                            and the possibility of choosing the colors of the board. No libraries — pure JS.
+                        </p>
+ 
+                        <div class="card-stack">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge accent">JavaScript</span>
+                        </div>
+ 
+                        <div class="card-links">
+                            <a href="https://github.com/pedrohrapinheiro/Chess-game-js" target="_blank" class="btn-ghost">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
                         </div>
                     </div>
-                    <!-- Stats card -->
-                    <div class="stats-card">
-                        <div class="stat">
-                            <span class="stat-num">12</span>
-                            <span class="stat-label">certs</span>
+                </article>
+ 
+                <!-- Project 2 — Nutrition Site -->
+                <article class="project-card" style="--delay: 0.15s">
+                    <div class="card-image">
+                        <img src="assets/images/nutri-preview.png" alt="Nutrition Site" draggable="false"/>
+                        <div class="card-overlay">
+                            <a href="https://github.com/pedrohrapinheiro/Site-project-nutrition" target="_blank" class="overlay-btn">
+                                view on github →
+                            </a>
                         </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat">
-                            <span class="stat-num">18</span>
-                            <span class="stat-label">years old</span>
+                        <div class="card-number">02</div>
+                    </div>
+ 
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2026</span>
+                            <span class="card-focus">// focus: HTML & CSS</span>
+                        </div>
+ 
+                        <h2 class="card-title">Nutrition Site</h2>
+ 
+                        <p class="card-desc">
+                            A professional landing page built for a fictional sports nutritionist.
+                            Focused on clean layout, gradient design, responsive sections,
+                            and polished UI — all with pure HTML and CSS, no frameworks.
+                        </p>
+ 
+                        <div class="card-stack">
+                            <span class="badge accent">HTML</span>
+                            <span class="badge accent">CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+ 
+                        <div class="card-links">
+                            <a href="https://github.com/pedrohrapinheiro/Site-project-nutrition" target="_blank" class="btn-ghost">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
                         </div>
                     </div>
-                </div>
+                </article>
+ 
             </div>
-
+ 
+            <!-- Footer note -->
+            <div class="projects-footer">
+                <span class="t-gray">// more projects coming soon</span>
+                <a href="https://github.com/pedrohrapinheiro" target="_blank" class="btn-ghost small">
+                    view all on github →
+                </a>
+            </div>
+ 
         </section>
     </main>
-
+ 
     <script src="assets/script.js"></script>
 </body>
 </html>
