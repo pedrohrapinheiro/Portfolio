@@ -23,3 +23,16 @@ This project was built using modern web development technologies, including:
 - CSS3
 - JavaScript
 - Git and GitHub
+
+## Project Structure
+
+```text
+portfolio/
+├── index.html
+├── index2.html
+├── index3.html
+└── assets/
+    ├── style.css
+    ├── script.js
+    └── images/
+```
