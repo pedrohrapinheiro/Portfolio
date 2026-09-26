@@ -29,17 +29,23 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="container" style="display: flex; align-items: center; min-height: 90vh; justify-content: center; text-align: center;">
-            <div class="fade-in" id="hero-content">
-                <h1 style="font-size: 4rem; margin-bottom: 1rem;" id="hero-name"></h1>
-                <h2 style="font-size: 1.5rem; color: var(--accent-cyan); margin-bottom: 1.5rem; font-family: var(--font-mono);" id="hero-role"></h2>
-                <p style="max-width: 600px; margin: 0 auto 2rem; color: var(--text-dim); font-size: 1.2rem;" id="hero-desc"></p>
-                <div style="display: flex; gap: 1rem; justify-content: center;">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        <section id="hero" class="container" style="display: flex; align-items: center; min-height: 100vh; justify-content: center; text-align: center; padding-top: 100px;">
+            <div class="fade-in" id="hero-content" style="display: flex; flex-direction: column; align-items: center; gap: 2rem; z-index: 1;">
+                <div class="profile-photo-container">
+                    <img src="assets/images/MeImage.jpeg" alt="Pedro Pinheiro" class="profile-photo">
+                    <div class="photo-glow"></div>
+                </div>
+                <div class="hero-text">
+                    <h1 style="font-size: 4rem; margin-bottom: 1rem;" id="hero-name"></h1>
+                    <h2 style="font-size: 1.5rem; color: var(--accent-cyan); margin-bottom: 1.5rem; font-family: var(--font-mono);" id="hero-role"></h2>
+                    <p style="max-width: 600px; margin: 0 auto 2rem; color: var(--text-dim); font-size: 1.2rem;" id="hero-desc"></p>
+                    <div style="display: flex; gap: 1rem; justify-content: center;">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </section>>
 
         <!-- About Section -->
         <section id="about" class="container">
@@ -89,6 +95,8 @@
         <p>&copy; <span id="year"></span> Pedro Pinheiro. Built with focus on AI & Engineering.</p>
     </footer>
 
-    <script type="module" src="src/js/main.js"></script>
+    <!-- Order is critical: Data first, then logic -->
+    <script src="src/data/portfolio.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
