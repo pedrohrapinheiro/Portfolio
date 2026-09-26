@@ -1,7 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = () => {
     // Check if PORTFOLIO_DATA is available
     if (typeof PORTFOLIO_DATA === 'undefined') {
-        console.error("Error: PORTFOLIO_DATA not loaded. Check the order of script tags in index.html");
+        console.error("Error: PORTFOLIO_DATA not loaded. Please check if src/data/portfolio.js is linked correctly in index.html");
+
+        // Fallback: try to alert the user so they know it's a loading error
+        alert("Erro ao carregar os dados do portfólio. Por favor, recarregue a página.");
         return;
     }
 
@@ -13,21 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
     renderContact();
     setupAnimations();
 
-    document.getElementById('year').textContent = new Date().getFullYear();
-});
+    if (document.getElementById('year')) {
+        document.getElementById('year').textContent = new Date().getFullYear();
+    }
+};
 
 function renderHero() {
+    if (!document.getElementById('hero-name')) return;
     document.getElementById('hero-name').textContent = PORTFOLIO_DATA.profile.name;
     document.getElementById('hero-role').textContent = PORTFOLIO_DATA.profile.role;
     document.getElementById('hero-desc').textContent = PORTFOLIO_DATA.profile.description;
 }
 
 function renderAbout() {
+    if (!document.getElementById('about-text')) return;
     document.getElementById('about-text').textContent = PORTFOLIO_DATA.profile.about;
 }
 
 function renderProjects() {
     const container = document.getElementById('projects-container');
+    if (!container) return;
     container.innerHTML = PORTFOLIO_DATA.projects.map(project => `
         <div class="glass-card project-card fade-in">
             <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">${project.title}</h3>
@@ -45,6 +53,7 @@ function renderProjects() {
 
 function renderResearch() {
     const container = document.getElementById('research-content');
+    if (!container) return;
     const research = PORTFOLIO_DATA.research;
 
     container.innerHTML = `
@@ -64,6 +73,7 @@ function renderResearch() {
 
 function renderSkills() {
     const container = document.getElementById('skills-container');
+    if (!container) return;
     const skills = PORTFOLIO_DATA.skills;
 
     const categories = [
@@ -85,6 +95,7 @@ function renderSkills() {
 
 function renderContact() {
     const container = document.getElementById('contact-links');
+    if (!container) return;
     const links = PORTFOLIO_DATA.profile.links;
 
     container.innerHTML = `
